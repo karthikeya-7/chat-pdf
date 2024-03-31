@@ -18,6 +18,7 @@ const Page = async ({ params }: PageProps) => {
 
   if (!user || !user.id)
     redirect(`/auth-callback?origin=dashboard/${fileid}`)
+  console.log(fileid)
 
   const file = await db.file.findFirst({
     where: {
@@ -25,6 +26,8 @@ const Page = async ({ params }: PageProps) => {
       userId: user.id,
     },
   })
+
+  console.log(file?.url)
 
   if (!file) notFound()
 
@@ -36,7 +39,7 @@ const Page = async ({ params }: PageProps) => {
         <div className='flex-1 xl:flex'>
           <div className='px-4 py-6 sm:px-6 lg:pl-8 xl:flex-1 xl:pl-6'>
             {/* Main area */}
-            <PdfRenderer />
+            <PdfRenderer url={file.url} />
           </div>
         </div>
 
