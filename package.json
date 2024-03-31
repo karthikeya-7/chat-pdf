@@ -10,7 +10,7 @@
     "postinstall": "prisma generate"
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.3.2",
+    "@hookform/resolvers": "^3.3.4",
     "@kinde-oss/kinde-auth-nextjs": "^2.0.13",
     "@mantine/hooks": "^7.3.2",
     "@pinecone-database/pinecone": "^1.1.2",
@@ -22,6 +22,7 @@
     "@radix-ui/react-progress": "^1.0.3",
     "@radix-ui/react-scroll-area": "^1.0.5",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
     "@radix-ui/react-tooltip": "^1.0.7",
     "@react-pdf-viewer/bookmark": "^3.12.0",
     "@react-pdf-viewer/core": "^3.12.0",
@@ -31,7 +32,7 @@
     "@trpc/next": "^10.44.1",
     "@trpc/react-query": "^10.44.1",
     "@trpc/server": "^10.44.1",
-    "@uploadthing/react": "^6.0.2",
+    "@uploadthing/react": "^6.4.1",
     "add": "^2.0.6",
     "ai": "^2.2.30",
     "class-variance-authority": "^0.7.0",
@@ -44,10 +45,11 @@
     "pdf-parse": "^1.1.1",
     "pdfjs-dist": "^3.4.120",
     "progress": "^2.0.3",
+    "prop-types": "^15.8.1",
     "react": "^18",
     "react-dom": "^18",
     "react-dropzone": "^14.2.3",
-    "react-hook-form": "^7.49.2",
+    "react-hook-form": "^7.51.2",
     "react-loading-skeleton": "^3.4.0",
     "react-markdown": "^9.0.1",
     "react-pdf": "^7.7.1",
@@ -59,7 +61,7 @@
     "stripe": "^14.10.0",
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
-    "uploadthing": "^6.1.0",
+    "uploadthing": "^6.7.0",
     "zod": "^3.22.4"
   },
   "devDependencies": {
