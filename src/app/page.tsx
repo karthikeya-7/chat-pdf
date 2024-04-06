@@ -24,7 +24,7 @@ export default function Home() {
       <Link className={buttonVariants({
         size: 'lg',
         className: "mt-5",
-      })} href='/dashboard' target='_blank'>
+      })} href='/dashboard' >
         Get started <ArrowRight className="ml-5 h-5 w-5" />
       </Link>
     </MaxWidthWrapper>
