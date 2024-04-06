@@ -11,7 +11,7 @@ import UserAccountNav from './UserAccountNav'
 import MobileNav from './MobileNav'
 
 const Navbar = async () => {
-  const { getUser } = await getKindeServerSession()
+  const { getUser } = getKindeServerSession()
   const user = await getUser()
 
   return (
@@ -21,7 +21,7 @@ const Navbar = async () => {
           <Link
             href='/'
             className='flex z-40 font-semibold'>
-            <span>quill.</span>
+            <span>Chat-Pdf</span>
           </Link>
 
           <MobileNav isAuth={!!user} />
@@ -44,13 +44,7 @@ const Navbar = async () => {
                   })}>
                   Sign in
                 </LoginLink>
-                <RegisterLink
-                  className={buttonVariants({
-                    size: 'sm',
-                  })}>
-                  Get started{' '}
-                  <ArrowRight className='ml-1.5 h-5 w-5' />
-                </RegisterLink>
+               
               </>
             ) : (
               <>
